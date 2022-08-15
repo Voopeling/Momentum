@@ -1,0 +1,65 @@
+.setting-block
+    position: fixed
+    top: -320px
+    background-color: rgba(0, 0, 0, 0.7)
+    height: 320px
+    width: 100%
+    transition: all 1s
+    z-index: 10
+    color: #fff
+h2
+    left: 50%
+    position: absolute
+    transform: translateX(-50%)
+.setting-block.active
+    top: 0
+.setting-button
+    transform: rotate(90deg)
+    position: absolute
+    left: calc(50% - 20px)
+    bottom: -40px
+    width: 30px
+    height: 30px
+    padding: 0
+    transition: all 1s
+    background: none
+    border: none
+img
+    width: 100%
+.setting-button.active
+    bottom: 0px
+    transform: rotate(270deg)
+.date-settings, .languages-settings, .player-settings, .weather-settings
+    width: 200px
+h3
+    border-bottom: 2px solid white
+    padding-bottom: 8px
+.line-1
+    max-width: calc( 100% - 370px)
+    display: flex
+    margin: auto
+    justify-content: space-between
+    margin-top: 50px
+ul
+    list-style: none
+    padding: 0
+li:nth-child(2)
+    margin-top: 10px
+li:nth-child(3)
+    margin-top: 10px
+li
+    display: flex
+    height: 15px
+    input
+        width: 15px
+        height: 15px
+        margin: 0
+        background: none
+    p
+        margin: 0
+        padding-left: 25px
+input[type="checkbox"]
+    background: red
+.line-2
+    margin: 30px auto 0
+    width: 150px

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="./sass/owfont-regular.css">
+    <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
+    <title>Document</title>
+</head>
+
+<body class="body">
+    <div class="body__wrapper">
+        <div class="time__wrapper">
+            <div class="time"></div>
+            <div class="data"></div>
+            <div class="greetings">
+                <div class="time-of-day"></div>
+                <input class="name" placeholder="[Имя]" type="text" value="">
+            </div>
+        </div>
+        <div class="setting-block">
+            <h2>Настройки</h2>
+            <div class="line-1">
+                <div class="date-settings">
+                    <h3>Дата/Время</h3>
+                    <ul>
+                        <li><input type="checkbox" name="" id="hidden-time">
+                            <p>Скрыть время</p>
+                        </li>
+                        <li><input type="checkbox" name="" id="hidden-data">
+                            <p>Скрыть дату</p>
+                        </li>
+                        <li><input type="checkbox" name="" id="hidden-greetings">
+                            <p>Скрыть приветствие</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="languages-settings">
+                    <h3>Язык</h3>
+                    <ul>
+                        <li><input type="checkbox" name="" id="russian">
+                            <p>Русский</p>
+                        </li>
+                        <li><input type="checkbox" name="" id="english">
+                            <p>Английский</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="player-settings">
+                    <h3>Музыка</h3>
+                    <ul>
+                        <li><input type="checkbox" name="" id="hidden-player">
+                            <p>Скрыть плеер</p>
+                        </li>
+                        <li><input type="checkbox" name="" id="hidden-playlist">
+                            <p>Скрыть плейлист</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="weather-settings">
+                    <h3>Погода</h3>
+                    <ul>
+                        <li><input type="checkbox" name="" id="hidden-weather">
+                            <p>Скрыть виджет</p>
+                        </li>
+                        <li><input type="checkbox" name="" id="hidden-humidity">
+                            <p>Скрыть влажность</p>
+                        </li>
+                        <li><input type="checkbox" name="" id="hidden-wind">
+                            <p>Скрыть скорость ветра</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line-2">
+                <li><input type="checkbox" name="" id="hidden-quotes">
+                    <p>Скрыть цитаты</p>
+                </li>
+            </div>
+            <button class="setting-button"><img src="https://momentum-2021q3.netlify.app/assets/svg/slider-next.svg"
+                    alt=""></button>
+        </div>
+        <div class="quotes">
+            <button class="quotes__button"><img src="https://momentum-2021q3.netlify.app/assets/svg/reload.svg"
+                    alt=""></button>
+            <p class="quote">"Работает? Не трогай."</p>
+            <p class="author">"Любой праграммист"</p>
+        </div>
+        <div class="weather">
+            <input class="weather__input" type="text" value="Минск">
+            <i class="weather-icon owf"></i>
+            <div class="description__container">
+                <div class="temperature"></div>
+                <div class="weather-description"></div>
+                <div class="wind"></div>
+                <div class="humidity"></div>
+            </div>
+        </div>
+        <div class="left__scroll"><img src="https://momentum-2021q3.netlify.app/assets/svg/slider-prev.svg" alt="">
+        </div>
+        <div class="right__scroll"><img src="https://momentum-2021q3.netlify.app/assets/svg/slider-next.svg" alt="">
+        </div>
+        <div class="audio__container">
+            <div class="player">
+                <audio src="./music/Виктор Цой - Группа крови.mp3"></audio>
+                <button class="previous audio__button"><img
+                        src="https://momentum-2021q3.netlify.app/assets/svg/play-prev.svg" alt=""></button>
+                <button class="play audio__button"><img class="play__img"
+                        src="https://momentum-2021q3.netlify.app/assets/svg/play.svg" alt=""></button>
+                <button class="next audio__button"><img
+                        src="https://momentum-2021q3.netlify.app/assets/svg/play-next.svg" alt=""></button>
+                <div class="volume-container">
+                    <div class="volume-button"><img id="volume-img" class="icono-volumeHigh" src="" alt=""></div>
+                    <div class="volume-slider">
+                        <div class="volume-percentage"></div>
+                    </div>
+                </div>
+                <div class="time-progress">
+                    <div class="current">0:00</div>
+                    <div class="divider">/</div>
+                    <div class="length">04:00</div>
+                </div>
+                <input class="progress-bar" type="range" value="0" min="0" max="" onchange="changeProgressBar()">
+
+            </div>
+            <ul class="audio__list">
+                <li class="audio__item">Группа крови</li>
+                <li class="audio__item">Звезда по имени Солнце</li>
+                <li class="audio__item">Кукушка</li>
+                <li class="audio__item">Пачка сигарет</li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/time.js"></script>
+    <script src="./js/hi.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/bg.js"></script>
+    <script src="./js/audio.js"></script>
+    <script src="./js/setting.js"></script>
+</body>
+
+</html>

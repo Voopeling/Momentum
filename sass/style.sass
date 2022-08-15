@@ -1,0 +1,35 @@
+@import "time"
+@import "quotes"
+@import "weather"
+@import "audio"
+@import "settings"
+
+body
+    margin: 0
+
+.body__wrapper
+    max-width: 1920px
+    height: 100vh
+    margin: auto
+    position: relative
+    background-repeat: no-repeat
+    background-size: cover
+    background-blend-mode: multiply
+    transition: background-image 2s ease-in-out
+.left__scroll
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    margin: 0 0 0 10px
+    width: 30px
+    height: 30px
+    img
+        padding: 0 0 0 10px
+.right__scroll
+    position: absolute
+    top: 50%
+    right: 0
+    transform: translateY(-50%)
+    margin: 0 10px 0 0
+    width: 30px
+    height: 30px

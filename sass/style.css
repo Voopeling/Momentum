@@ -1,0 +1,365 @@
+.time__wrapper {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 100px;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.time__wrapper .time {
+  transition: all 1s;
+}
+.time__wrapper .data {
+  font-size: 30px;
+  transition: all 1s;
+}
+.time__wrapper .greetings {
+  display: flex;
+  width: 100%;
+  transition: all 1s;
+}
+.time__wrapper .time-of-day {
+  font-size: 50px;
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  vertical-align: middle;
+}
+.time__wrapper input {
+  background: none;
+  border: none;
+  width: 40%;
+  color: #fff;
+  font-size: 40px;
+  margin: 0 0 0 5px;
+  outline: none;
+  padding: 8px 0 0 0;
+}
+
+::-moz-placeholder {
+  font-size: 40px;
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  font-size: 40px;
+  color: #fff;
+}
+
+::placeholder {
+  font-size: 40px;
+  color: #fff;
+}
+
+.quotes {
+  color: #fff;
+  position: fixed;
+  top: 1070px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 0 30px 0;
+  height: 200px;
+  transition: all 1s;
+}
+.quotes__button {
+  background: none;
+  border: none;
+  height: 50px;
+}
+.quotes__button img {
+  height: 100%;
+}
+.quotes .quote {
+  font-size: 30px;
+  margin: 20px 0;
+}
+.quotes .author {
+  font-size: 22px;
+  margin: 0;
+}
+
+.weather {
+  position: fixed;
+  right: 0;
+  color: #fff;
+  font-size: 25px;
+  width: 300px;
+  margin: 20px 20px 0 0;
+  transition: all 1s;
+}
+.weather-icon {
+  font-size: 60px !important;
+}
+.weather .owf {
+  display: inline-block;
+  font: normal normal normal 14px/1 owfont;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+.weather__input {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #fff;
+  font-size: 44px;
+  outline: none;
+  border-bottom: 3px solid #fff;
+  width: 100%;
+}
+.weather .description__container {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+}
+.weather .description__container .humidity {
+  transition: all 1s;
+  width: 300px;
+}
+.weather .description__container .wind {
+  transition: all 1s;
+  width: 300px;
+}
+
+.audio__container {
+  margin: 20px 0 0 20px;
+  position: absolute;
+  width: 230px;
+}
+.audio__container .player {
+  position: relative;
+  transition: all 1s;
+  left: 0;
+}
+.audio__container .player .time-progress {
+  color: #fff;
+  display: flex;
+  position: relative;
+}
+.audio__container .audio__button {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+.audio__container .audio__button img {
+  width: 100%;
+}
+.audio__container .audio__list {
+  color: #fff;
+  padding: 0;
+  list-style-type: none;
+  font-size: 20px;
+  position: relative;
+  transition: all 1s;
+  left: 0;
+}
+.audio__container .audio__list li:first-child {
+  color: grey;
+}
+.audio__container .time-progress {
+  font-size: 19px;
+  margin: 10px 0 10px 0;
+}
+.audio__container .progress-bar {
+  width: 80%;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+.audio__container .audio__list {
+  font-size: 22px;
+  margin: 15px 0 0 0;
+}
+.audio__container .audio__list .audio__item {
+  margin: 5px 0 0 0;
+  height: 25px;
+}
+
+.volume-container {
+  position: absolute;
+  margin: 0;
+  cursor: pointer;
+  width: 50px;
+  right: 30px;
+  top: 0;
+  height: 40px;
+}
+.volume-container .volume-button {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.volume-container .volume-button .volume {
+  transform: scale(0.7);
+  position: relative;
+  z-index: 2;
+}
+.volume-container .volume-slider {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 2;
+  width: 0;
+  height: 15px;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.67);
+  transition: 0.25s;
+}
+.volume-container .volume-slider .volume-percentage {
+  background: #135eff;
+  height: 100%;
+  width: 50%;
+}
+
+.volume-container:hover .volume-slider {
+  width: 150px;
+}
+
+.setting-block {
+  position: fixed;
+  top: -320px;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 320px;
+  width: 100%;
+  transition: all 1s;
+  z-index: 10;
+  color: #fff;
+}
+
+h2 {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.setting-block.active {
+  top: 0;
+}
+
+.setting-button {
+  transform: rotate(90deg);
+  position: absolute;
+  left: calc(50% - 20px);
+  bottom: -40px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  transition: all 1s;
+  background: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+}
+
+.setting-button.active {
+  bottom: 0px;
+  transform: rotate(270deg);
+}
+
+.date-settings, .languages-settings, .player-settings, .weather-settings {
+  width: 200px;
+}
+
+h3 {
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+}
+
+.line-1 {
+  max-width: calc(100% - 370px);
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li:nth-child(2) {
+  margin-top: 10px;
+}
+
+li:nth-child(3) {
+  margin-top: 10px;
+}
+
+li {
+  display: flex;
+  height: 15px;
+}
+li input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  background: none;
+}
+li p {
+  margin: 0;
+  padding-left: 25px;
+}
+
+input[type=checkbox] {
+  background: red;
+}
+
+.line-2 {
+  margin: 30px auto 0;
+  width: 150px;
+}
+
+body {
+  margin: 0;
+}
+
+.body__wrapper {
+  max-width: 1920px;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  transition: background-image 2s ease-in-out;
+}
+
+.left__scroll {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 0 0 10px;
+  width: 30px;
+  height: 30px;
+}
+.left__scroll img {
+  padding: 0 0 0 10px;
+}
+
+.right__scroll {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin: 0 10px 0 0;
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=style.css.map */
