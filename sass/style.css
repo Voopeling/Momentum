@@ -60,7 +60,7 @@
 .quotes {
   color: #fff;
   position: fixed;
-  top: 1070px;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, 0);
   display: flex;
@@ -89,7 +89,7 @@
 }
 
 .weather {
-  position: fixed;
+  position: absolute;
   right: 0;
   color: #fff;
   font-size: 25px;
@@ -340,6 +340,7 @@ body {
   background-size: cover;
   background-blend-mode: multiply;
   transition: background-image 2s ease-in-out;
+  overflow: hidden;
 }
 
 .left__scroll {

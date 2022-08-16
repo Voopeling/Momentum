@@ -9,5 +9,4 @@ button.addEventListener('click',async function() {
     let randomValue = data[random]
     quote.textContent = randomValue.text
     author.textContent = randomValue.author
-    
 })

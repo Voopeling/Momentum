@@ -31,9 +31,9 @@ let quotes = document.querySelector('.quotes')
 let hiddenQuotes = document.querySelector('#hidden-quotes')
 hiddenQuotes.addEventListener('change', () => {
     if(hiddenQuotes.checked) {
-        quotes.style.top = '1370px'
+        quotes.style.bottom = '-300px'
     } else {
-        quotes.style.top = '1070px'
+        quotes.style.bottom = '0px'
     }
 })
 
